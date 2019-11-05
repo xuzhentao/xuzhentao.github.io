@@ -46,14 +46,14 @@ layout: default
 
   <!-- Coursera -->
   <div class="hentry post project-batch-title">
-    <h2>University of Michigan, Research Assistant</h2>
+    <h2>University of Michigan</h2>
   </div>
 
   <div class="hentry post">
     <div class="entry-summary">
       <ul class="project-list">
 
-        <li><strong style="color:#333;">Data Mining</strong>: Pioneered in predicting people’s mental-health status from social-media posts, self-motivated from data collection through multi-model feature extraction, prototyping, and model performance testing. Leading to 80% F1-score in prediction.</li>
+        <li><strong style="color:#333;">Mental Illness Predictor</strong>: Pioneered in predicting people’s mental-health status from social-media posts, self-motivated from data collection through multi-model feature extraction, prototyping, and model performance testing. Leading to 80% F1-score in prediction.</li>
 
 
       </ul>
