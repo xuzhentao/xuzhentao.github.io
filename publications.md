@@ -13,7 +13,7 @@ layout: default
   <div class="hentry post">
     <div class="entry-summary">
       <ul class="project-list">
-        <li>Liu, Yifang, <strong style="color:#333;">Xu Zhentao</strong>, et al. "Heterogeneous Collaborative Filtering." arXiv preprint arXiv:1909.01727 (2019).</li>
+        <li>Liu Yifang, <strong style="color:#333;">Xu Zhentao</strong>, et al. "Heterogeneous Collaborative Filtering." arXiv preprint arXiv:1909.01727 (2019).</li>
 
 
         <li> Sun Yong, <strong style="color:#333;">Xu Zhentao</strong>, and Tianyu Zhang. On-Board Predictive Maintenance with Machine Learning. No. 2019-01-1048. SAE Technical Paper, 2019.</li>
