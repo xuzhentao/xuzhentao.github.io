@@ -19,7 +19,7 @@ defaults:
 google_analytics: 'UA-151447192-1'
 title: Zhentao
 description: Zhentao's portfolio and writings on machine learning, data science and distributed systems.
-url: https://zhentao-xu.com
+url: http://xuzhentao.github.io
 author: Zhentao Xu
 logo: images/contents/NN.png
 social:
