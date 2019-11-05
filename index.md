@@ -19,4 +19,4 @@ layout: default
     </div>
     <hr />
   </div>
-</div>
+</div> 
