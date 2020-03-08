@@ -6,7 +6,7 @@ layout: default
 
 <div class="hfeed">
 
-  <!-- Google -->
+  <!-- Smule -->
   <div class="hentry post project-batch-title">
     <h2>Smule</h2>
   </div>
@@ -14,20 +14,24 @@ layout: default
   <div class="hentry post">
     <div class="entry-summary">
       <ul class="project-list">
-        <li><strong style="color:#333;">Batched Recommendation</strong>: Completed adaptive music recommendation systems that recommend trillions songs and millions users. Administered and optimized various recommendation algorithms behind Explore and Songbook pages.</li>
+        <li><strong style="color:#333;">Batched Recommendation</strong>: Completed adaptive music recommendation systems that recommend trillions songs and millions users. Administered and optimized various recommendation algorithms behind Explore and Songbook pages.
+        </li>
 
-        <li><strong style="color:#333;">Real-time Recommendation</strong>: Improved web user engagement by 10% by building as a chief developer a brand-new real-time music recommendation system. Implemented modules including real-time feature extraction, ranking, database communication, and training modules. Used tools including Hadoop, Scala, Spark, Flink, Cassandra, Redis, Kafka etc.</li>
+        <li><strong style="color:#333;">Real-time Recommendation</strong>: Improved web user engagement by 10% by building as a chief developer a brand-new real-time music recommendation system. Implemented modules including real-time feature extraction, ranking, database communication, and training modules. Used tools including Hadoop, Scala, Spark, Flink, Cassandra, Redis, Kafka etc.
+        </li>
 
         <li><strong style="color:#333;">Features Extraction</strong>: Improved users’ average music listening time by 30%, 12%, and 5% separately by developing three new features for personalized recommendation models behind Feed, Explore, and Songbook pages. (co-authored in publication).</li>
 
-        <li><strong style="color:#333;">NLP</strong>: Led researches on classification and keywords extraction, trained model on comments data with tools TensorFlow and NTLK.</li>
+        <li><strong style="color:#333;">Intention Extractor (NLP Research)</strong>: Led researches on text classification and keywords extraction, trained model on comments data with tools TensorFlow and NTLK.</li>
+
+        <li><strong style="color:#333;">Other</strong>: Learn new techniques in industrial recommendation system through paper, conference, or Coursera. Apply the new techniques in to Smule's machine learning model.</li>
 
       </ul>
     </div>
   </div>
 
 
-  <!-- Coursera -->
+  <!-- Isuzu -->
   <div class="hentry post project-batch-title">
     <h2>Isuzu</h2>
   </div>
@@ -44,7 +48,7 @@ layout: default
     </div>
   </div>
 
-  <!-- Coursera -->
+  <!-- University of Michigan -->
   <div class="hentry post project-batch-title">
     <h2>University of Michigan</h2>
   </div>
