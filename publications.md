@@ -7,6 +7,21 @@ layout: default
 <div class="hfeed">
 
   <div class="hentry post project-batch-title">
+    <h2>2020</h2>
+  </div>
+
+  <div class="hentry post">
+    <div class="entry-summary">
+      <ul class="project-list">
+        <li><strong style="color:#333;">Zhentao Xu</strong>, Veronica Perez-Rosas, Rada Mihalcea. "Inferring Social Media Users’ Mental Health Statusfrom Multimodal Information." </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+  <div class="hentry post project-batch-title">
     <h2>2019</h2>
   </div>
 
