@@ -11,7 +11,7 @@ layout: default
     <div class="entry-summary">
       <p>I am Zhentao, an engineer interested in machine learning and distributed systems.</p>
 
-      <p>At <a href="https://linkedin.com" target="_blank" >LinkedIn</a>, I am currently in the AI Fundation team.</p>
+      <p>At <a href="https://linkedin.com" target="_blank" >LinkedIn</a>, I am currently in the AI Foundation team.</p>
 
       <p>Prior to LinkedIn, I was at <a href="https://smule.com" target="_blank" >Smule</a> working on music recommendation systems, and at <a href="http://www.isuzutechcenter.com/" target="_blank" >Isuzu</a> working on data infrastructure and data products. I am also a University of Michigan (UM) and Shanghai Jiao Tong University (SJTU) alumni. I was once a RA on a social media research project in the <a href="http://lit.eecs.umich.edu/" target="_blank" >LIT Lab</a>. </p>
 
