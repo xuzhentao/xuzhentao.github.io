@@ -1,6 +1,6 @@
 ---
-title: Projects
-section: projects
+title: Experience
+section: experience
 layout: default
 ---
 
