@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Learning Notes for System Architecture Foundations
-category: Architecture
+title: Learning Notes 'System Architecture Foundations'
+category: [Lecture Notes, System Design]
 excerpt: LinkedIn Learning
 ---
 
