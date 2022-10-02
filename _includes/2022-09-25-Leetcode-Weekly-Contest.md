@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 2022-09-25 Leetcode Weekly Contest 312
+title: 2022-09-25 Leetcode Weekly Contest 313
 category: [Leetcode]
 excerpt: LinkedIn Learning
 ---
