@@ -14,12 +14,12 @@ excerpt: LinkedIn Learning
 | Summary                 | AC [Q1](https://leetcode.com/contest/weekly-contest-313/problems/number-of-common-factors)       [Q2](https://leetcode.com/contest/weekly-contest-313/problems/maximum-sum-of-an-hourglass)    ;  [Q3](https://leetcode.com/contest/weekly-contest-313/problems/minimize-xor)  WA once      ; [Q4](https://leetcode.com/contest/weekly-contest-313/problems/maximum-deletions-on-a-string)        TLE once    |
 | Ranking | <img src="{{site.baseurl}}/images/posts/leetcode/2022-10-01/leetcode_20221001_ranking.png" width = '350' >
 
-**Summary**
+### **Summary**
 
 This week I continuely join my LeetCode competition and luckily `AC` all 4 questions eventually. The first three questions are quite straight forward and are completed within the first 23 mins. The 4th question is a little bit tricker but still made to AC at `37 min`. The forth question itself is clearly a DP problem  but the complexity of DP solution is still `O(n^2)`, and given the `n` can be as large as `4000`, the `n^2` can easily go to `1.6x10^7` and likely to TLE (which is the reason why I failed once). 
 
 
-**Question 2430. Maximum Deletions on a String**
+##### **Question 2430. Maximum Deletions on a String**
 ```
 You are given a string s consisting of only lowercase English letters. In one operation, you can:
 
@@ -59,7 +59,7 @@ class Solution:
 
 **Unfortunately**, this answer will lead to Time Limit Exceeded error, where the failed test case is `aaaa...a` (there are 4000 repeated 'a'). In this case, the answer's time complexity is maximized to be roughly `(0.5x4000)^2 / 2 ~= 0.125 x 1.6 x 10^7`.
 
-**Working Solution**
+##### **Working Solution**
 
 I tried my luck by adding one edge case check that check if the string is a monotic string with only one type of character at the very begining of DP function, and it's working, hmm... 
 
@@ -68,7 +68,7 @@ if len(set(s)) == 1:
     return len(s)
 ```
 
-**Thoughts and Further Experiments**
+##### **Thoughts and Further Experiments**
 
 Although this can walk around the test case and AC this question, I personally don't think this is a perfect solution, because essentially the problem's complexity hasn't been changed and there is still edge case not covered by it (e.g. what if there is a test case with `aaaa.....ab`, clearly it will still lead to TLE because the monotonic substring condition will never be satisified).
 
@@ -97,12 +97,13 @@ class Solution:
 
 
 * I secondly tried to convert the string `s` to list via `s = list(s)`, it's a pure experiment because we know there is string comparsion `s[i:i+j] == s[i+j:i+2*j]` and I want to see if list comparison can be faster. Unfortunately that's not the case. By converting the string to list, the time is significant increased from `1500ms` to `4000ms` (a 100+% time increment). This finding is later theoretically proved by some reference ([link](https://stackoverflow.com/questions/21396414/whats-more-efficient-in-python-comparing-lists-or-strings/21396449#comment32273606_21396414))
-
  <img src="{{site.baseurl}}/images/posts/leetcode/2022-10-01/leetcode_20221001_ranking_experiment.png" width = '500' >
 
 
 
-**Appendix**
+In conclusion, we havne't fully resolved the edge case of "aaaa..a" without using an explicit checking logic. We learnt that passing point into DP function instead of initiating substring has better performance; we also learnt that string comparsion is faster than list comparsion, thus converting string to list in such use case is not a good practice. 
+
+### **Appendix**
 
 - code of benchmarking the 3 method's computation time
 
