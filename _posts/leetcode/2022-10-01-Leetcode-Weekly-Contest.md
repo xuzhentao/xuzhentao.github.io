@@ -16,7 +16,7 @@ excerpt: LinkedIn Learning
 
 ### **Summary**
 
-This week I continuely join my LeetCode competition and luckily `AC` all 4 questions eventually. The first three questions are quite straight forward and are completed within the first 23 mins. The 4th question is a little bit tricker but still made to AC at `37 min`. The forth question itself is clearly a DP problem  but the complexity of DP solution is still `O(n^2)`, and given the `n` can be as large as `4000`, the `n^2` can easily go to `1.6x10^7` and likely to TLE (which is the reason why I failed once). 
+This week I joined my LeetCode competition and luckily `AC` all 4 questions eventually. The first three questions are quite straightforward and are completed within the first 23 mins. The 4th question is a little bit tricker but still made to AC at `37 min`. The forth question itself is clearly a DP problem  but the complexity of DP solution is still `O(n^2)`, and given the `n` can be as large as `4000`, the `n^2` can easily go to `1.6x10^7` and likely to TLE (which is the reason why I failed once). 
 
 
 ##### **Question 2430. Maximum Deletions on a String**
@@ -31,7 +31,7 @@ For example, if s = "ababc", then in one operation, you could delete the first t
 Return the maximum number of operations needed to delete all of s.
 ```
 
-This question is cleary a DP problem because 1. it's asking for the `maximum of xxx` and 2. there is clearly a recursive relation between `Question(n)` and `Question(n+1)`, where `n` here is the index of the string. More specifically:
+This question is cleary a DP problem because of the following two features 1. it's asking for the `maximum of xxx` and 2. there is clearly a recursive relation between `Question(n)` and `Question(n+1)`, where `n` here is the index of the string. More specifically:
 1. The recursion relation is: given a substring `s[i:-1]` its maximal number of deletion `Result(i)` is `max(Result(i+j)) among all eligible j` if there is any such `j` for repeated starting substring (this coresponds to deleting the repeated leading substring), or `1` if no such `j` exist (this corresponds to deleting the entire string).
 2. the base case is: if `i==len(s)-1`, i.e. if there is only one character in the sub-problem, then the maximum number of deletion is 1. i.e. `Result(len(s)-1) =  1`.
 
@@ -72,7 +72,7 @@ if len(set(s)) == 1:
 
 Although this can walk around the test case and AC this question, I personally don't think this is a perfect solution, because essentially the problem's complexity hasn't been changed and there is still edge case not covered by it (e.g. what if there is a test case with `aaaa.....ab`, clearly it will still lead to TLE because the monotonic substring condition will never be satisified).
 
-Therefore I did the following experiments to see if we can universally solve this problem (i.e. avoid the TLE) without using the `len(set(s)) == 1` checking. In short, although I eventually didn't find a good solution that can walkaround this test case, some valuable lessons are learnt.
+Therefore I did the following experiments to see if we can universally solve this problem (i.e. avoid the TLE) without using the `len(set(s)) == 1` checking. In short, **although I eventually didn't find a good solution that can walkaround this test case, some valuable lessons are learnt.**
 
 * I firstly tried to change the `DP` argument from type `string` to `int`. The intuition behind it is that Python string is immutable ([reference](https://www.educative.io/answers/why-are-strings-in-python-immutable)), meaning Python has to initiate a new object for creating substring via `s[i:j]` and this object initiation can be time-consuming. As a better solution, if we only use the index (i.e. pointer to the starting index of the original string), maybe the time for initiating string can be saved. The experiment support this assumption: the running time is consistently reduced from `2600ms` to `1500ms` (a `40%` improvement) for the test case of `2000` repeated `'a'`! 
 ```python
