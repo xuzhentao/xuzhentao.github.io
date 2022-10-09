@@ -55,7 +55,7 @@ Perform second operation four times p="addb", s="", t="".
 ```
 
 **My Thoughts During Contest**
-* Firstly, to ensure the result is lexicographically minimum, the smallest character should definitely be the first one in the result. (Because 1. it's do-able by moving all characters before that from `s` to `t` (i.e. first step). then move the latest character from `t` to `result` (i.e. second step), and 2. otherwise the result will be larger and doesn't satisfy the minimum requirement).
+* Firstly, to ensure the result is lexicographically minimum, the smallest character should definitely be the first one in the result. (This can be **proved by contradiction** with 2 steps: 1. having `min(s)` at `res[0]` is definitely do-able by firstly moving all characters before that from `s` to `t` (i.e. first step) and secondly moving the latest character from `t` to `result` (i.e. second step), and 2. otherwise the result will be larger and doesn't satisfy the minimum requirement).
 * The first bullet point is a constrains for my follow-up operations, because I can't arbitrary extract an character from `t` to result unless I remove all the characters after that from `t` to `result` first. I have two choices:
 * The second bullet point means I have two options: 1) repeat the first bullet for the rest of `s` (this is a little bit recursion), I should choose this operation if there there exist a character in `s` that's smaller that the last element in `t` 2) remove the last character from `t` to `result`, I should choose this operation if all element in `s` are larger than the last element in `t`. 
 
@@ -131,5 +131,5 @@ class Solution:
 
 
 **Conclusion & Learning**
-1. This is a greedy solution (greedy doesn't have a specific template to follow, so that might be the main reason why I spent much time here)
+1. This is a greedy solution which I didn't practice a lot cuz it's very case-specific. I believe one signature of using greedy solution is that **"The solution should definitely be xxxxxx (or start with xxxxxx) to satisfy the requirement"**
 2. `Counter` is our good friend, especially for the case where the key is limited (here the key number is 26 at maximum.)
